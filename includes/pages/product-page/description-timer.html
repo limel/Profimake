@@ -1,0 +1,40 @@
+<div class="description-timer">
+	<div class="description-timer__img">
+		<picture>
+			<source srcset="./img/timer-img_mobile.png" media="(max-width: 767px)" />
+			<img src="./img/timer-img.png" alt="img" />
+		</picture>
+	</div>
+	<div class="title-h4">Поспеши купить !</div>
+	<div class="subtitle-3">До конца акции осталось</div>
+
+	<div id="timer" class="description-timer__timer">
+		<div class="description-timer__item">
+			<div class="description-timer__value">
+				<span data-value="days"></span>
+			</div>
+			<div class="description-timer__caption">Дни</div>
+		</div>
+
+		<div class="description-timer__item">
+			<div class="description-timer__value">
+				<span data-value="hours"></span>
+			</div>
+			<div class="description-timer__caption">Часы</div>
+		</div>
+
+		<div class="description-timer__item">
+			<div class="description-timer__value">
+				<span data-value="mins"></span>
+			</div>
+			<div class="description-timer__caption">Минуты</div>
+		</div>
+	</div>
+	<script type="module">
+		const timer = new Timer({
+			selector: '#timer',
+			targetDate: new Date('Sep 6, 2021'),
+		});
+		timer.start();
+	</script>
+</div>

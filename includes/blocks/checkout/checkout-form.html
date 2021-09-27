@@ -1,0 +1,105 @@
+<form class="checkout-form">
+	<div class="checkout-form__heading">
+		<a href="./account-enter.html"> Войдите </a>
+		для получения бонусов и быстрого оформления заказа
+		<b>+ 560 ₴ на ваш бонус-счет за этот заказ</b>
+		<svg><use href="./img/sprite.svg#profile2"></use></svg>
+	</div>
+	<fieldset>
+		<div class="checkout-form__title">Способ доставки</div>
+		<div class="checkout-form__caption">Город доставки</div>
+		<select class="js-select checkout-form__select">
+			<option data-placeholder="true">Город доставки</option>
+			<option value="1">Днепр</option>
+			<option value="2">Киев</option>
+			<option value="3">Одесса</option>
+			<option value="4">Львов</option>
+			<option value="5">Запорожье</option>
+		</select>
+
+		<label class="checkout-form__radio-btn">
+			<input type="radio" name="delivery" />
+			<div class="checkmark"></div>
+			<span class="radio-btn__text">Доставка в отделение "Нова Пошта" — 175 ₴ </span>
+		</label>
+
+		<select class="js-select checkout-form__select">
+			<option data-placeholder="true">Отделение Новой Почты</option>
+			<option value="1">отделение 1</option>
+			<option value="2">отделение 2</option>
+			<option value="3">отделение 3</option>
+			<option value="4">отделение 4</option>
+			<option value="5">отделение 5</option>
+			<option value="5">отделение 6</option>
+			<option value="5">отделение 7</option>
+			<option value="5">отделение 8</option>
+			<option value="5">отделение 9</option>
+			<option value="5">отделение 10</option>
+			<option value="5">отделение 11</option>
+			<option value="5">отделение 12</option>
+		</select>
+
+		<label class="checkout-form__radio-btn">
+			<input type="radio" name="delivery" />
+			<div class="checkmark"></div>
+			<span class="radio-btn__text">Адресная доставка "Нова Пошта" — 185 ₴ </span>
+		</label>
+
+		<label class="checkout-form__radio-btn">
+			<input type="radio" name="delivery" />
+			<div class="checkmark"></div>
+			<span class="radio-btn__text">Курьерская доставка по Киеву — 50 ₴ </span>
+		</label>
+
+		<label class="checkout-form__radio-btn">
+			<input type="radio" name="delivery" />
+			<div class="checkmark"></div>
+			<span class="radio-btn__text">Самовывоз — бесплатно </span>
+		</label>
+	</fieldset>
+
+	<fieldset>
+		<div class="checkout-form__title">Способ оплаты</div>
+		<select class="js-select checkout-form__select">
+			<option data-placeholder="true">Способ оплаты</option>
+			<option value="1">Днепр</option>
+			<option value="2">Киев</option>
+			<option value="3">Одесса</option>
+			<option value="4">Львов</option>
+			<option value="5">Запорожье</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<div class="checkout-form__title">Данные получателя</div>
+
+		<div class="checkout-form__input">
+			<label for="#" class="checkout-form__input-caption">Имя и Фамилия </label>
+			<input type="text" name="name" autocomplete="off" placeholder="Имя и Фамилия" />
+		</div>
+
+		<div class="checkout-form__input">
+			<label for="#" class="checkout-form__input-caption">Мобильный телефон</label>
+			<input type="tel" name="phone" autocomplete="off" placeholder="+ 38 (___)-___-__-__" />
+		</div>
+
+		<label class="checkout-form__checkbox">
+			<input type="checkbox" />
+			<div class="checkmark"></div>
+			<span class="checkbox__text">Не звоните мне для проверки деталей заказа</span>
+		</label>
+
+		<div class="checkout-form__input">
+			<label for="#" class="checkout-form__input-caption">Электронная почта </label>
+			<input type="text" name="email" placeholder="Электронная почта" autocomplete="off" />
+		</div>
+
+		<div class="checkout-form__textarea">
+			<label for="#" class="checkout-form__textarea-caption">Добавить комментарий </label>
+			<textarea name="comments" cols="1" rows="4"></textarea>
+		</div>
+	</fieldset>
+	<button type="submit" class="checkout-form__btn-submit">Оформить заказ</button>
+	<div class="checkout-form__notice">
+		Нажимая на кнопку «Подтвердить заказ», вы соглашаетесь с условиями обработки персональных данных и офертой.
+	</div>
+</form>
